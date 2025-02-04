@@ -12,6 +12,7 @@
     --fundo-escuro: #080324; /* Fundo escuro */
     --texto-claro: #FFFFFF; /* Texto branco */
     --texto-cinza: #C7BAB3; /* Texto cinza */
+    /* #181012 */
 }
 
 body {
@@ -20,8 +21,287 @@ body {
     font-family: 'Bebas Neue', sans-serif;
     line-height: 1.6;
     font-size: 18px; /* Tamanho da fonte base aumentado */
+    background-image: url(../assets/imagem-fundo-banner.jpg);
+    background-repeat: no-repeat; /* Ajusta a posição da imagem */
+
 }
 
 /* Container */
 
-/* Construir CSS restante (Aqui) */
+header{
+    background-color: var(--cor-primaria); 
+}
+
+nav {
+    max-width: 1120px; /* Define a largura máxima do elemento em 1120 pixels */
+    margin: auto; /* centraliza o elemento horizontalmente na tela */
+
+    padding: 1.5rem 10rem; 
+    /* 1.5rem: Isso define o preenchimento vertical (topo e base) do elemento com 1.5 
+    vezes o tamanho da fonte do elemento raiz. Se a fonte do elemento raiz for 16 pixels, isso resultaria em um preenchimento vertical de 24 pixels.
+    
+    10rem: Isso define o preenchimento horizontal (esquerda e direita) do elemento com 10 vezes o tamanho da fonte do elemento raiz. Se a fonte do elemento raiz for 16 pixels, isso resultaria em um preenchimento vertical de 160 pixels.*/
+
+    display: flex; /* Define o elemento como um container flexível */
+    flex-direction: row; /* Define a direção dos elementos filhos como uma linha */
+    justify-content: space-between; /* Distribui os elementos filhos uniformemente ao longo do eixo principal, com espaçamento entre eles */
+}
+
+ul {
+    list-style-type: none; /* Remove os marcadores de lista (bolinhas) de um elemento de lista */
+}
+
+img {
+    width: 130px;
+    height: 40px;
+}
+
+.contatofundo{
+    background-color: #A259F7;
+    padding: 10px;
+    border-radius: 5px;
+}
+.menu-toggle {
+    display: none; /* Não exibe em telas grandes */
+    cursor: pointer
+}
+
+.menu-icon {
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+.menu {
+    display: flex; /* Define o elemento como um cointar flexível */
+    flex-direction: row; /* Estabele a direção dos elemento filhos para uma disposição em linha */
+    gap: 24px; /* Define o espaçamento entre os elementos filhos como 24 pixels */
+    color: #fff; /* Define a cor do texto para um tom específico de amarelo */
+    margin-top: 9px; /* Adiciona um espaçamento de margem superior de 9 pixels ao elemento */
+    margin-left: 25px;
+    margin-right: 25px;
+
+}
+
+.menu a:hover {
+    color: #FFF2E780; /* Nova cor do texto quando o cursor passa por cima */
+}
+
+.menu a:visited {
+    color: #FFF2E780; /* Define a cor dos links visitados como #FFF2E780 */
+}
+
+/* __________________________________________________________ */
+.banner {
+    background-image: url(../assets/imagem-fundo-banner.jpg);
+    opacity: 100px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 10rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+.texto {
+    padding: 20px;
+}
+
+.linha {
+    width: 150px;
+    height: 3px;
+    background-color: #FFAF00;
+    margin: 20px auto;
+}
+
+h3 {
+    color: #e2e2e2;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.mouse {
+    width: 50px;
+    height: auto;
+    margin-top: 05px;
+}
+
+/* ___________________________________________ */
+
+:root {
+    --cor-primaria: #FF0140;
+    --cor-secundaria: #FFAF00;
+    --cor-fundo: #181012;
+    --cor-texto: #fff;
+}
+
+.about {  /* sobre */
+    background-color: var(--cor-fundo);
+    padding: 50px;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.sobre {
+    color: var(--cor-primaria);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1000px;
+}
+
+.place {
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+    filter: brightness(0.7) contrast(1.2);
+}
+
+.caixa {
+    max-width: 50%;
+}
+
+.participantes {
+    color: var(--cor-secundaria);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+h2 {
+    color: var(--cor-texto);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Deixa invisível */
+.pulas, .pula {
+    border: none;
+    height: 2px;
+    background-color: var(--cor-fundo); 
+    margin: 10px 0;
+}
+
+.description {
+    color: var(--cor-texto);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+/* _____________________________________ */
+/* Estilos Gerais */
+
+body {
+    line-height: 1.6;
+    text-align: center;
+
+}
+.a{
+    
+}
+
+/* Containers dos Info Boxes */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* Caixa de informações */
+.info-box {
+    background-color: #181012;
+    padding: 20px;
+    width: 200px;
+    height: auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.info-box h3 {
+    color: #FFAF00;
+    margin-bottom: 10px;
+}
+
+.quadrado-texto {
+    background-color: #080324;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Endereço */
+.titulo-endereco {
+    color: #F9003D;
+    margin-top: 50px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.endereco-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.endereco {
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* Mapa */
+.mapa-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mapa {
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+    border: none;
+}
+
+/* _____________________________________ */
+/* footer */
+footer{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    background: #F9003D;
+}
+
+.footer-container{
+    color: #fff2e7;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+

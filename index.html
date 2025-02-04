@@ -21,9 +21,94 @@
 </head>
 <body>
 
+ <!-- header -->
+  <header>
+    <nav>
+        <span class="icon"><img src="assets/logos_senai_branco.png" alt="Logo SENAI"></span>
 
-<!-- Construir HTML (Aqui) -->
+        <ul class="menu" id="MenuItems">
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Endereço</a></li>
+            <li><a href="#" class="contatofundo">Contate-nos</a></li>
+        </ul>
+
+        <!-- Menu (Telas menores) -->
+        <img src="assets/menu.png" alt="Menu mobile" class="menu-icon" onclick="menutoggle()"/>
+    </nav>
+  </header>
+
+  <!-- __________________________________ -->
+  <main>
+    <div class="banner">
+        <div class="info">
+            <div class="texto">
+                <h1>Cursos Técnicos SENAI</h1>
+                <div class="linha"></div>               
+                <h3>FORMAÇÃO PROFISSIONAL DE EXCELÊNCIA</h3>
+            </div>
+            <img src="assets/mouse-down.png" alt="Ícone de rolagem" class="mouse">
+        </div>
+    </div>
+  </main>
+
+  <!-- ____________________________________ -->
+
+  <div class="about">   
+    <section class="content">
+        <span class="sobre">SOBRE OS PROJETOS</span>
+        <div class="container">
+            <img src="assets/imagem-seção-sobre.jpg" alt="Imagem sobre o projeto" class="place">
+            <div class="caixa">
+                <h4 class="participantes">PARTICIPANTES</h4>
+                <hr class="pulas">
+                <h2>MAIS DE 80 ALUNOS ORGANIZADOS EM 16 GRUPOS</h2>
+                <hr class="pula">
+                <p class="description">
+                    O SENAI oferece cursos técnicos que combinam teoria e prática, preparando os alunos
+                    para os desafios do mercado de trabalho. Com uma metodologia inovadora e professores altamente qualificados.
+                </p>
+            </div> 
+        </div>
+    </section>
+  </div>
+
+  <!-- ___________________________________________ -->
+  <section class="quadrado"></section>
+
+  <div class="container">
+      <div class="info-box">
+          <h3>LOCAL</h3>
+          <div class="quadrado">SÃO PAULO</div>
+      </div>
+      <div class="info-box">
+          <h3>DURAÇÃO</h3>
+          <div class="quadrado">90 DIAS</div>
+      </div>
+      <div class="info-box">
+          <h3>DESAFIOS</h3>
+          <div class="quadrado">+30 DESAFIOS</div>
+      </div>
+  </div>
+
+  <h2 class="titulo-endereco">ENDEREÇO</h2>
+
+  <div class="endereco-container">
+      <div class="endereco">
+          <p>AV. SANTOS DUMONT, 300</p>
+          <p>IPIRANGUINHA, SANTO ANDRÉ - SP</p>
+          <p>CEP: 09015-320</p>
+      </div>
+      <div class="mapa">
+        <img class ="mapa" src="assets/mapa.png" alt="Imagem sobre o projeto" class="place">
+      </div>
+  </div>
   
-   
+<!-- ____________________________________________________________________________ -->
+
+  <footer>
+      <p class="footer-container">Copyright 2025 SENAI/SESI SANTO ANDRÉ 1.18</p>
+  </footer>
+
 </body>
 </html>
