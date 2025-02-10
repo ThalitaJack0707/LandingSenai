@@ -32,6 +32,10 @@ header{
     background-color: var(--cor-primaria); 
 }
 
+a{
+    text-decoration: none;
+    color:#e2e2e2
+}
 nav {
     max-width: 1120px; /* Define a largura máxima do elemento em 1120 pixels */
     margin: auto; /* centraliza o elemento horizontalmente na tela */
@@ -223,32 +227,65 @@ body {
 /* Containers dos Info Boxes */
 .container {
     display: flex;
-    justify-content: center;
-    gap: 30px;
+    justify-content:space-between;
     margin-top: 40px;
 }
 
 /* Caixa de informações */
-.info-box {
+.info-sp {
     background-color: #181012;
     padding: 20px;
     width: 200px;
     height: auto;
     text-align: center;
     border-radius: 10px;
+    margin-left: 250px;
 }
 
-.info-box h3 {
+.info-sp h3 {
     color: #FFAF00;
     margin-bottom: 10px;
 }
 
+.info-duracao {
+    background-color: #181012;
+    padding: 20px;
+    width: 200px;
+    height: auto;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 50px;
+}
+
+.info-duracao h3 {
+    color: #FFAF00;
+    margin-bottom: 10px;
+}
+
+.info-desafios {
+    background-color: #181012;
+    padding: 20px;
+    width: 200px;
+    height: auto;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 50px;
+}
+
+.info-desafios h3 {
+    color: #FFAF00;
+    margin-bottom: 10px;
+}
+
+
+
 .quadrado-texto {
-    background-color: #080324;
+    background-color: #d8d4ee;
     padding: 10px;
     border-radius: 5px;
     font-weight: bold;
     color: white;
+    
 }
 
 /* Endereço */
